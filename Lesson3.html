@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit 1 - lesson 3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+<style>
+body{ background: linear-gradient(45deg, white, #D1E4C4, white); height: 425vh; margin:2px;}
+.buttons{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:30px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:250px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons:active{
+opacity: 0.7;
+}
+
+.buttons1{
+  background-color:#D1E4C4;
+  color: black; 
+  box-shadow:5px 0px 7px black;
+  border-radius:10px;
+  cursor: pointer;
+  margin-right:5px;
+  font-size:23px;
+  transition: background-color 1s;
+  transition: color 1s;
+  width:175px;
+  height: 80px;  
+  border-width: 2px;
+  margin-bottom: 25px;
+  margin-left: 30px;
+  
+}
+.buttons1:hover{
+background-color:#F1F7ED;
+color:black;
+box-shadow: 5px 0px 7px black;
+}
+.buttons1:active{
+opacity: 0.7;
+}
+.tooltips{
+ position:relative;
+ display:block;
+ text-align:center;
+ font-size:70px;
+ font-weight:bold;
+ cursor:pointer;
+ 
+}
+.tooltips .tooltipstext{
+ visibility:hidden;
+ position:absolute;
+ z-index:1;
+ left:100px;
+ width:1100px;
+ top:125%;
+ background: #F1F7ED;
+ font-size:40px;
+ font-weight:normal;
+ padding: 5px;
+ border-radius: 6px;
+ box-shadow: 5px 0px 7px black;
+ 
+}
+.tooltips:hover .tooltipstext{  visibility: visible;}
+
+
+.dropdown{ display: flex;}
+ .dropdown button{
+  background-color: #D1E4C4; color: black; padding: 10px 30px;
+  border:none; cursor:pointer; box-shadow: 5px 5px 7px black;
+  transition:0.05s; border-radius:4px;
+ }
+
+ .dropdown a{
+  display: flex; text-decoration: none; text-align: center; padding: 10px 23px; margin-top:10px; background-color: #D1E4C4;
+  color:black; box-shadow: 5px 5px 7px black; border-radius:4px; margin-left:5px;
+ }
+
+ .dropdown .content{
+   position: absolute; min-width:100px;
+  display:none;
+ }
+
+ .dropdown:hover .content{ 
+  display:flex;
+ }
+ .dropdown:hover button{
+  background-color: #F1F7ED; color:black;
+ }
+ .dropdown a:hover{
+  background-color: #F1F7ED; color:black;
+ }
+
+</style>
+</head>
+<body>
+
+
+<h1 class="tooltips"> People, Places & Nationalities
+<span class="tooltipstext"> <p> + The Question Where? </p></span></h1>
+
+<p style="text-align: center; font-size: 40px;"> CAPITALIZATION RULES </p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr; font-size: 30px; ">
+
+<div style="padding-left: 15px; ">
+&bull; People's names always start with a Capital Letter. <br><hr>
+&bull; Countries always start with a Capital Letter. <br><hr>
+&bull; Cities always start with a Capital Letter. <br><hr>
+&bull; Nationalities always start with a Capital Letter.
+</div>
+<div style="">
+&bull;  My name is <b>S</b>arah <b>J</b>asem.<br><hr>
+&bull; I come from <b>E</b>ngland, but I live in <b>G</b>ermany.<br><hr>
+&bull;  I grew up in <b>N</b>ottingham. <br><hr>
+&bull; I am <b>E</b>nglish.
+</div>
+</div><hr><br>
+
+
+<p style="text-align: center; font-size: 40px;"> Where you come from is your nationality. </p>
+
+<div style=" display: grid; grid-template-columns: 1fr 1fr 1fr; font-size:30px;">
+
+<div style="text-align: center; border-right: 1px solid grey;">
+<img src="England.jpg"><br><hr>
+<img src="wales.jpg"><br><hr>
+<img src="scotland.jpg"></div>
+
+<div style="text-align: center; border-right: 1px solid grey; padding-top:9px;">
+Is this <b>G</b>ermany?<br>
+No, it isn't <b>G</b>ermany. It is <b>E</b>ngland.<br><hr>
+Is this <b>F</b>rance?<br>
+No, it isn't <b>F</b>rance. It is <b>W</b>ales.<br><hr>
+Is this <b>S</b>pain?<br>
+No, it isn't <b>S</b>pain. It is <b>S</b>cotland.</div>
+
+<div style="text-align: center;  padding-top:9px;">
+Is <b>E</b>ngland in <b>P</b>oland?<br>
+No, <b>E</b>ngland is in <b>B</b>ritain.<br><hr>
+Is <b>W</b>ales in <b>G</b>ermany?<br>	
+No, <b>W</b>ales</b> is in <b>B</b>ritain.<br><hr>
+Is <b>S</b>cotland in <b>F</b>rance?<br>
+No, <b>S</b>cotland is in <b>B</b>ritain.</div>
+</div><hr><br>
+
+
+
+<p style="text-align: center; font-size: 40px;"> Who is this? &middot; Who are they?</p>
+
+
+<div style=" display: grid; grid-template-columns: 150px 1fr 1fr 1fr; font-size:30px;">
+
+<div style="text-align: center; border-right: 1px solid grey;">
+<img src="Napolean.jpg"><br><hr>
+<img src="beatles.jpg"></div>
+
+<div style="text-align: center; border-right: 1px solid grey; padding-top:34px;">
+Who is this?<br>
+It's <b>N</b>apoleon.<br><hr>
+Who are they?<br>
+They're 'The <b>B</b>eatles'.</div>
+
+<div style="text-align: center; border-right: 1px solid grey; padding-top:34px;">
+Where does he come from?<br>
+He comes from <b>F</b>rance.<br><hr>
+Where do they come from?<br>
+They come from <b>E</b>ngland.</div>
+
+<div style="text-align: center;  padding-top:34px;">
+What nationality is he?<br>
+He's <b>F</b>rench.<br><hr>
+What nationality are they?<br>
+They're <b>B</b>ritish.</div>
+</div><hr><br>
+
+
+<div style="text-align: left; font-size: 30px; padding-left: 45px;">
+&bull; Where do you live? &#10162; Where do you live now?<br>
+&bull; Where are you staying? &#10162; Temporary accommodation.<br>
+&bull; Where do you come from? &#10162; Where are you from? &#10162; Where were you born or raised?<br>
+</div><hr>
+
+
+<div style=" display: grid; grid-template-columns: 900px; justify-content: center;">
+
+<p style="text-align: center; font-size: 33px;">Follow the dialogue.</p>
+
+
+<p style="text-align: right; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;"> 	
+What's your name please? - Sarah</p>
+
+<p style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">Rawan - Rawan.</p>
+
+<p style="text-align: right; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">	
+Do you come from London? - Sarah </p>
+
+<p style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">Rawan -  	
+No, I come from Derby.</p>
+
+<p style="text-align: right; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">  Do you live in Derby? - Sarah 
+ </p>
+
+<p style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">Rawan - No, I live in London. </p>
+
+
+<p style="text-align: right; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">   Are you English? - Sarah</p>
+
+<p style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">Rawan - 	
+Yes, I am.</p>
+
+<p style="text-align: right; font-size: 30px; background-color:#F1F7ED; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">  Thank you. - Sarah</p>
+
+<p style="text-align: left; font-size: 30px; background-color:#D1E4C4; padding: 10px; border-radius: 6px; box-shadow: 1px 1px 1px grey;">Rawan - 	
+You're welcome.</p>
+
+
+</body>
+</html>
